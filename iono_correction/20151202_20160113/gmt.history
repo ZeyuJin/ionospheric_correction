@@ -1,0 +1,10 @@
+# GMT 6 Session common arguments shelf
+BEGIN GMT 6.3.0
+B	xa1.57+lPhasey+lrad
+J	X
+JX	X3.35i
+R	0/14152/0/174240
+X	3.35i
+Y	0i
+@L	9
+END

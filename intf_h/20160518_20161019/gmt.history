@@ -1,0 +1,10 @@
+# GMT 5 Session common arguments shelf
+BEGIN GMT 5.4.4
+B	xaf+lUnwrapped phasey+lrad
+J	X
+JX	X6.5i
+R	unwrap.grd
+X	1.3i
+Y	3i
+L	2
+END

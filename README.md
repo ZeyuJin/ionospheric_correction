@@ -24,7 +24,13 @@ plot_iono.csh  20160518_20161019
 ```
 It generates a figure named with "iono_correct.pdf"
 
+Correction of coseismic interferogram
 <p align="center">
-  <img src="iono_correction/plots/coseismic.jpg">
-  <img src="iono_correction/plots/posteismic.jpg">
+  <img src="plots/coseismic.png">
 </p>
+
+Correction of postseismic interferogram
+<p align="center">
+  <img src="plots/postseismic.png">
+</p>
+

@@ -24,6 +24,4 @@ plot_iono.csh  20160518_20161019
 ```
 It generates a figure named with "iono_correct.pdf"
 
-<p align="center">
-  <img src="./iono_correction/20160518_20161019/iono_correct.pdf">
-</p>
+

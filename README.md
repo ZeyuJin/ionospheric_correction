@@ -4,7 +4,7 @@ We use the split-spectrum method (Gomba etal., 2015; Heresh et al., 2017) to cor
 
 $$ \Delta \hat{\phi}_{iono} = \frac{f_L f_H}{f_0 (f^2_H - f^2_L)}(\Delta \phi_L f_H - \Delta \phi_H f_L) $$
 
-Because ALOS-2 data has a narrow bandwidth ($f_H - f_L$) compared to its central frequency ($f_0$), 
+Because ALOS-2 data has a narrow bandwidth $(f_H - f_L)$ compared to its central frequency $f_0$, 
 for instance, $f_0 = 1.24$ GHz, but the bandwith is 4 MHz, the correction formula would amplify the noise in the interferogram.
 
 To solve this issue, not only do we need a large filter, but also rule out pixels whose amplitude is too large after the correction.

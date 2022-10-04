@@ -24,4 +24,7 @@ plot_iono.csh  20160518_20161019
 ```
 It generates a figure named with "iono_correct.pdf"
 
-
+<p align="center">
+  <img src="iono_correction/plots/coseismic.jpg">
+  <img src="iono_correction/plots/posteismic.jpg">
+</p>

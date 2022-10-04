@@ -27,7 +27,7 @@ Plot the comparison between original and corrected interferogram:
 ```
 plot_iono.csh  20160518_20161019
 ```
-It generates a figure named with "iono_correct.pdf"
+It generates a figure named with "iono_correct.pdf" located in each directory.
 
 Correction of coseismic interferogram
 <p align="center">

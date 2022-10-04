@@ -18,6 +18,11 @@ estimate_ionospheric_phase_local.csh  ../../intf_h/20160518_20161019  ../../intf
 ```
 The last two parameters denote the filter wavelength ratio along range and azimuth directions.
 
+Sometimes, the corrected phase is centralized at $\pi$ values. Since the absolute phase value is not needed, we can shift $\pi$ values of corrected phase to let it be centralized at 0.
+```
+gmt grdmath ph_corrected.grd PI ADD 2 PI MUL MOD = ph_corrected.grd
+```
+
 Plot the comparison between original and corrected interferogram:
 ```
 plot_iono.csh  20160518_20161019
@@ -34,3 +39,11 @@ Correction of postseismic interferogram
   <img src="plots/postseismic.png">
 </p>
 
+Compared to traditional methods, we have some improvements/adjustments:
+1. The traditional correction methods works only on single subswath. If we merge 3/5 subswaths for the whole interferogram, due to a amplifier in the split-spectrum formula, there may exist a very large discontinuity between each subswath. We need to remove the discontinuity using the file "boundary.txt" that gives the # of range pixels at each intersection of subswath. (**correct_subswath_local.m**)
+
+2. We also need to remove noisy pixels by setting the amplitude threshold in **correct_subswath_local.m**. In this example, I set the threshold to be 220. In other real cases, it's better to write a program that chops off 5% ~ 10% pixels using its amplitude distribution.
+
+3. During the iterative interpolation & filtering step, we use linear extrapolation instead of nearest interpolation methods that proposed in Heresh etal., 2017. Because the phase is **NOT randomly distributed within an area**, instead, it's somewhat linearly extended to the whole space of the interferogram. **The nearest extrapolation would under-estimate the ionospheric signal**.
+
+4. Previous **grdfilter** uses a rectangular filter which is not good to filter irregular shape of ionospheric patterns. Instead, we design a non-isotropic filter shape (**nancov.m**). This filter could also reduce the edge effects in the interferogram during the filtering step.

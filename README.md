@@ -47,3 +47,7 @@ Compared to traditional methods, we have some improvements/adjustments:
 3. During the iterative interpolation & filtering step, we use linear extrapolation instead of nearest interpolation methods that proposed in Heresh etal., 2017. Because the phase is **NOT randomly distributed within an area**, instead, it's somewhat linearly extended to the whole space of the interferogram. **The nearest extrapolation would under-estimate the ionospheric signal**.
 
 4. Previous **grdfilter** uses a rectangular filter which is not good to filter irregular shape of ionospheric patterns. Instead, we design a non-isotropic filter shape (**nancov.m**). This filter could also reduce the edge effects in the interferogram during the filtering step.
+
+## References
+Jin, Z., Fialko, Y., Zubovich, A., & Schöne, T. (2022). Lithospheric deformation due to the 2015 M7. 2 Sarez (Pamir) earthquake constrained by 5 years of space geodetic observations. Journal of Geophysical Research: Solid Earth, 127(4).
+

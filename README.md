@@ -51,3 +51,6 @@ Compared to traditional methods, we have some improvements/adjustments:
 ## References
 Jin, Z., Fialko, Y., Zubovich, A., & Schöne, T. (2022). Lithospheric deformation due to the 2015 M7. 2 Sarez (Pamir) earthquake constrained by 5 years of space geodetic observations. Journal of Geophysical Research: Solid Earth, 127(4).
 
+Fattahi, H., Simons, M., & Agram, P. (2017). InSAR time-series estimation of the ionospheric phase delay: An extension of the split range-spectrum technique. IEEE Transactions on Geoscience and Remote Sensing, 55(10), 5984-5996.
+
+Gomba, G., Parizzi, A., De Zan, F., Eineder, M., & Bamler, R. (2015). Toward operational compensation of ionospheric effects in SAR interferograms: The split-spectrum method. IEEE Transactions on Geoscience and Remote Sensing, 54(3), 1446-1461.
